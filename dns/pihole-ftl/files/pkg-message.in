@@ -1,0 +1,20 @@
+[
+{ type: install
+  message: <<EOM
+To enable pihole-ftl you need:
+
+1) Enable dnsproxy in /etc/rc.conf with the following line:
+   pihole_FTL_enable="YES"
+
+2) Configuration templates are available in %%ETCDIR%%/ as
+   pihole-FTL.conf.sample
+   setupVars.conf.sample
+   dns-servers.conf.sample
+   adlists.list.sample
+
+3) Run 'pihole -g' to initialize gravity db
+
+For more information see man pihole-ftl(1)
+EOM
+}
+]

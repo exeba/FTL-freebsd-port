@@ -1,0 +1,26 @@
+bin/pihole
+bin/pihole-FTL
+@sample etc/pihole/pihole-FTL.conf.sample
+@sample etc/pihole/setupVars.conf.sample
+@sample etc/pihole/dns-servers.conf.sample
+@sample etc/pihole/adlists.list.sample
+share/pihole/scripts/COL_TABLE
+share/pihole/scripts/database_migration/gravity/8_to_9.sql
+share/pihole/scripts/database_migration/gravity/11_to_12.sql
+share/pihole/scripts/database_migration/gravity/6_to_7.sql
+share/pihole/scripts/database_migration/gravity/3_to_4.sql
+share/pihole/scripts/database_migration/gravity/5_to_6.sql
+share/pihole/scripts/database_migration/gravity/7_to_8.sql
+share/pihole/scripts/database_migration/gravity/2_to_3.sql
+share/pihole/scripts/database_migration/gravity/13_to_14.sql
+share/pihole/scripts/database_migration/gravity/1_to_2.sql
+share/pihole/scripts/database_migration/gravity/4_to_5.sql
+share/pihole/scripts/database_migration/gravity/14_to_15.sql
+share/pihole/scripts/database_migration/gravity/9_to_10.sql
+share/pihole/scripts/database_migration/gravity/12_to_13.sql
+share/pihole/scripts/database_migration/gravity/10_to_11.sql
+share/pihole/scripts/database_migration/gravity-db.sh
+share/pihole/scripts/gravity.sh
+share/pihole/scripts/utils.sh
+share/pihole/templates/gravity.db.sql
+share/pihole/templates/gravity_copy.sql
