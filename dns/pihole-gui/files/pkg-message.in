@@ -1,0 +1,9 @@
+[
+{ type: install
+  message: <<EOM
+To user pihole-gui you need to configure a webserver with
+php support.
+
+EOM
+}
+]
