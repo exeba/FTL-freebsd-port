@@ -14,8 +14,9 @@ GH_ACCOUNT=	exeba
 GH_PROJECT=	FTL
 GH_TAGNAME=	2fd725f221558ad4dc3cae79d47ee467c6c0db92
 
-#BUILD_DEPENDS=	cmake libidn nettle readline
+USES=		cmake
 #RUN_DEPENDS=	bash bind-tools sqlite3
+LIB_DEPENDS=	libnettle.so:security/nettle libidn.so:dns/libidn libreadline.so:devel/readline
 
 USERS=	bind
 GROUPS=	bind
