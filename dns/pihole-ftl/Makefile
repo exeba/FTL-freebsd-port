@@ -15,7 +15,7 @@ GH_PROJECT=	FTL
 GH_TAGNAME=	2fd725f221558ad4dc3cae79d47ee467c6c0db92
 
 USES=		cmake
-#RUN_DEPENDS=	bash bind-tools sqlite3
+RUN_DEPENDS=	bash:shells/bash sudo:security/sudo dig:dns/bind-tools sqlite3:databases/sqlite3
 LIB_DEPENDS=	libnettle.so:security/nettle libidn.so:dns/libidn libreadline.so:devel/readline
 
 USERS=	bind
