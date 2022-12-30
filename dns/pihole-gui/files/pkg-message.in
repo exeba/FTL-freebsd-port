@@ -4,6 +4,13 @@
 To user pihole-gui you need to configure a webserver with
 php support.
 
+A sample configuration for apache24 can be found at:
+  %%EXAMPLESDIR%%/apache24-pihole-gui.conf
+
+In case you need to run "pihole" as the unprivileged user running
+the web server, a sample sudoers config can be found at:
+  %%EXAMPLESDIR%%/sudoers.d-pihole-gui
+
 EOM
 }
 ]

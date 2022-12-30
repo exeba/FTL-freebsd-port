@@ -25,5 +25,6 @@ do-install:
 	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${WWWDIR}
 	@${MKDIR} ${EXAMPLESDIR}
 	${INSTALL_DATA} ${FILESDIR}/examples/apache24-pihole-gui.conf ${EXAMPLESDIR}/apache24-pihole-gui.conf
+	${INSTALL_DATA} ${FILESDIR}/examples/sudoers.d-pihole-gui ${EXAMPLESDIR}/sudoers.d-pihole-gui
 
 .include <bsd.port.mk>
