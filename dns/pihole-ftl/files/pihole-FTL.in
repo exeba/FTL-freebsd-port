@@ -36,9 +36,8 @@ pihole_FTL_prestart()
     chown $PIHOLE_USER:$PIHOLE_GROUP /var/run/pihole /var/run/pihole-FTL.pid /var/run/pihole-FTL.port
 
     mkdir -p /var/log/pihole
-    touch /var/log/pihole-FTL.log /var/log/pihole.log
-    chown $PIHOLE_USER:$PIHOLE_GROUP /var/log/pihole /var/log/pihole-FTL.log /var/log/pihole.log
-    
+    chown $PIHOLE_USER:$PIHOLE_GROUP /var/log/pihole
+
     touch /usr/local/etc/pihole/dhcp.leases
     chown $PIHOLE_USER:$PIHOLE_GROUP /usr/local/etc/pihole/dhcp.leases
 
