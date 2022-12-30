@@ -12,9 +12,10 @@ LICENSE=	MIT
 USE_GITHUB=	yes
 GH_ACCOUNT=	exeba
 GH_PROJECT=	FTL
-GH_TAGNAME=	2fd725f221558ad4dc3cae79d47ee467c6c0db92
+GH_TAGNAME=	a9935bed4698c0c3cdf3b55b123110b8703b1c79
 
 USES=		cmake
+BUILD_DEPENDS=	xxd:editors/vim
 RUN_DEPENDS=	bash:shells/bash sudo:security/sudo dig:dns/bind-tools sqlite3:databases/sqlite3
 LIB_DEPENDS=	libnettle.so:security/nettle libidn.so:dns/libidn libreadline.so:devel/readline
 
