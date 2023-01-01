@@ -12,7 +12,10 @@ LICENSE=	MIT
 USE_GITHUB=	yes
 GH_ACCOUNT=	exeba
 GH_PROJECT=	AdminLTE
-GH_TAGNAME=	606ed2bc407b0cb5a768a7e58656d883c2a174c0
+GH_TAGNAME=	722f96512b40e7a1e49d77d83268be66de78c2ae
+
+USES=           php
+USE_PHP=        session sqlite3 mbstring
 
 DATADIR?=	${PREFIX}/share/pihole
 
