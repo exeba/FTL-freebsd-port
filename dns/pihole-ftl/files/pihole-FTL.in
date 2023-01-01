@@ -47,7 +47,6 @@ pihole_FTL_prestart()
     # Ensure that permissions are set so that pihole-FTL can edit all necessary files
     chown $PIHOLE_USER:$PIHOLE_GROUP /var/run/pihole-FTL.pid /var/run/pihole-FTL.port
     chown $PIHOLE_USER:$PIHOLE_GROUP /usr/local/etc/pihole /usr/local/etc/pihole/dhcp.leases 2> /dev/null
-    chown $PIHOLE_USER:$PIHOLE_GROUP /var/log/pihole-FTL.log /var/log/pihole.log
     chmod 0644 /var/log/pihole-FTL.log /var/run/pihole-FTL.pid /var/run/pihole-FTL.port /var/log/pihole.log
     
     # Chown database files to the user FTL runs as. We ignore errors as the files may not (yet) exist
