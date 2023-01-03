@@ -1,6 +1,8 @@
 #!/bin/sh
 
 JAIL_NAME="pihole"
+JAIL_IP_CIDR="192.168.0.10/24"
+JAIL_GATEWAY="192.168.0.1"
 JAIL_HOSTNAME="www.example.org"
 IFACE_NAME="em0"
 JAILS_PATH="/jails"
@@ -16,6 +18,7 @@ bsdinstall jail "$JAIL_ROOT"
 mkdir -p /usr/local/scripts/
 install /usr/share/examples/jails/jib /usr/local/scripts/
 
+# Jail definition
 cat << EOF >> "/etc/jail.conf.d/$JAIL_NAME.conf"
 pihole {
     vnet;
@@ -28,4 +31,10 @@ pihole {
     exec.start = "/bin/sh /etc/rc";            # Start command
     exec.stop = "/bin/sh /etc/rc.shutdown";    # Stop command
 }
+EOF
+
+# Setup ip & default gateweay
+cat << EOF >> "$JAIL_ROOT/etc/rc.conf"
+ifconfig_e0b_$JAIL_NAME="$JAIL_IP_CIDR"
+defaultrouter="$JAIL_GATEWAY"
 EOF
