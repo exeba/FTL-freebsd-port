@@ -12,10 +12,12 @@ LICENSE=	MIT
 USE_GITHUB=	yes
 GH_ACCOUNT=	exeba
 GH_PROJECT=	AdminLTE
-GH_TAGNAME=	722f96512b40e7a1e49d77d83268be66de78c2ae
+GH_TAGNAME=	b52f4369a4a65229ba3e8f4236877285b950307f
+
+RUN_DEPENDS=    pidof:sysutils/pidof
 
 USES=           php
-USE_PHP=        session sqlite3 mbstring
+USE_PHP=        session filter sqlite3 mbstring xml intl
 
 DATADIR?=	${PREFIX}/share/pihole
 
